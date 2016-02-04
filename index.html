@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Startpoint</title>
+    <title>Map + Countries Finder</title>
     <link rel='stylesheet' type='text/css' href='main.css'>
     <script src='countries_select_view.js'></script>
     <script src='country_detailed_view.js'></script>
@@ -23,6 +23,19 @@
         <p>Yet some more stuff</p>
     </div>
     <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                  center: {lat: 44.540, lng: -78.546},
+                  zoom: 8
+                });
+            }
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js"
+    async defer></script>
+
     <p id="info" style="display:none">Finding your location... </p>
 
 </body>
