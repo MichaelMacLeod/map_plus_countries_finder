@@ -9,7 +9,7 @@ var Map = function(latLng, zoomLevel){
       map: this.googleMap,
       title: title,
       icon: icon,
-      animation: google.maps.Animation.BOUNCE
+      animation: google.maps.Animation.DROP
     });
     return marker;
   },
