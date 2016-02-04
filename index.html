@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Map + Countries Finder</title>
     <link rel='stylesheet' type='text/css' href='main.css'>
@@ -18,24 +17,11 @@
     <select id="countries">
     </select>
     <div id="info">
-        <p>More Stuff</p>
-        <p>Other stuff</p>
-        <p>Yet some more stuff</p>
+        <p><!-- More Stuff --></p>
+        <p><!-- Other stuff --></p>
+        <p><!-- Yet some more stuff --></p>
     </div>
     <div id="map"></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 44.540, lng: -78.546},
-          zoom: 8
-      });
-    }
-    
-</script>
-<script src="https://maps.googleapis.com/maps/api/js"
-async defer></script>
-
 <p id="info" style="display:none">Finding your location... </p>
 
 </body>
